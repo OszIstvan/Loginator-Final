@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E165747A-8E8E-46EE-8686-299089FF2200}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LOGINATOR___ProjectMunka</RootNamespace>
+    <AssemblyName>LOGINATOR - ProjectMunka</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABForm.Designer.cs">
+      <DependentUpon>ABForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABKezelo.cs" />
+    <Compile Include="ABKivetel.cs" />
+    <Compile Include="AruFelvetel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AruFelvetel.Designer.cs">
+      <DependentUpon>AruFelvetel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AruFelviteEll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AruFelviteEll.Designer.cs">
+      <DependentUpon>AruFelviteEll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beszallitas.cs" />
+    <Compile Include="BeszallitasFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeszallitasFrm.Designer.cs">
+      <DependentUpon>BeszallitasFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErkeztetesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErkeztetesForm.Designer.cs">
+      <DependentUpon>ErkeztetesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frissaru.cs" />
+    <Compile Include="FrissaruForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrissaruForm.Designer.cs">
+      <DependentUpon>FrissaruForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GongyiRaklap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GongyiRaklap.Designer.cs">
+      <DependentUpon>GongyiRaklap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GongyiRekesz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GongyiRekesz.Designer.cs">
+      <DependentUpon>GongyiRekesz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GongyiRolli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GongyiRolli.Designer.cs">
+      <DependentUpon>GongyiRolli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GongyiUveg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GongyiUveg.Designer.cs">
+      <DependentUpon>GongyiUveg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gongyoleg.cs" />
+    <Compile Include="GongyolegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GongyolegForm.Designer.cs">
+      <DependentUpon>GongyolegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KisszallitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KisszallitForm.Designer.cs">
+      <DependentUpon>KisszallitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kiszallitas.cs" />
+    <Compile Include="KiszallitasFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiszallitasFrm.Designer.cs">
+      <DependentUpon>KiszallitasFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiSzamlazas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiSzamlazas.Designer.cs">
+      <DependentUpon>KiSzamlazas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MelyhutottAru.cs" />
+    <Compile Include="MHAruForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MHAruForm.Designer.cs">
+      <DependentUpon>MHAruForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuszakiCikk.cs" />
+    <Compile Include="MuszakiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuszakiForm.Designer.cs">
+      <DependentUpon>MuszakiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raklap.cs" />
+    <Compile Include="RaktarozasFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaktarozasFrm.Designer.cs">
+      <DependentUpon>RaktarozasFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rekesz.cs" />
+    <Compile Include="RolliKocsi.cs" />
+    <Compile Include="Selejt.cs" />
+    <Compile Include="SelejtEllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelejtEllForm.Designer.cs">
+      <DependentUpon>SelejtEllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelejtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelejtForm.Designer.cs">
+      <DependentUpon>SelejtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelejtKezelesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelejtKezelesFrm.Designer.cs">
+      <DependentUpon>SelejtKezelesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SzamlazasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SzamlazasForm.Designer.cs">
+      <DependentUpon>SzamlazasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Szarazaru.cs" />
+    <Compile Include="SzarazaruForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SzarazaruForm.Designer.cs">
+      <DependentUpon>SzarazaruForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tejtermek.cs" />
+    <Compile Include="TejtermekForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TejtermekForm.Designer.cs">
+      <DependentUpon>TejtermekForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Termekek.cs" />
+    <Compile Include="Uveg.cs" />
+    <EmbeddedResource Include="ABForm.resx">
+      <DependentUpon>ABForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AruFelvetel.resx">
+      <DependentUpon>AruFelvetel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AruFelviteEll.resx">
+      <DependentUpon>AruFelviteEll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeszallitasFrm.resx">
+      <DependentUpon>BeszallitasFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErkeztetesForm.resx">
+      <DependentUpon>ErkeztetesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrissaruForm.resx">
+      <DependentUpon>FrissaruForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GongyiRaklap.resx">
+      <DependentUpon>GongyiRaklap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GongyiRekesz.resx">
+      <DependentUpon>GongyiRekesz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GongyiRolli.resx">
+      <DependentUpon>GongyiRolli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GongyiUveg.resx">
+      <DependentUpon>GongyiUveg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GongyolegForm.resx">
+      <DependentUpon>GongyolegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KisszallitForm.resx">
+      <DependentUpon>KisszallitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiszallitasFrm.resx">
+      <DependentUpon>KiszallitasFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiSzamlazas.resx">
+      <DependentUpon>KiSzamlazas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MHAruForm.resx">
+      <DependentUpon>MHAruForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuszakiForm.resx">
+      <DependentUpon>MuszakiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RaktarozasFrm.resx">
+      <DependentUpon>RaktarozasFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelejtEllForm.resx">
+      <DependentUpon>SelejtEllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelejtForm.resx">
+      <DependentUpon>SelejtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelejtKezelesFrm.resx">
+      <DependentUpon>SelejtKezelesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SzamlazasForm.resx">
+      <DependentUpon>SzamlazasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SzarazaruForm.resx">
+      <DependentUpon>SzarazaruForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TejtermekForm.resx">
+      <DependentUpon>TejtermekForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logisztika.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Felvágott.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hűtöttáru.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Műszaki cikkek.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pékáru.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tejtermék.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoadingBay.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kiszallitas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raktarozas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selejt.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoginatorAB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LoginatorAB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>LoginatorAB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
